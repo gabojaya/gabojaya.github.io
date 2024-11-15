@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'Romanesco';
+    src: url('../fonts/Romanesco-Regular.ttf') format('truetype'); /* Ajusta la ruta si es necesario */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype'); /* Ajusta la ruta si es necesario */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0px auto;
+}
+
+/* Header*/
+.header {
+    height: 70px;
+    background: #A3A656;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu1{
+    padding-left: 70px;
+}
+.menu1 ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px;
+} 
+.menu1 ul li{
+    display: inline-block;
+    margin: 0px;
+    
+}
+
+.menu1 ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    padding-right: 20px;
+    
+}
+.menu1 :hover {
+    color: #FFFF00;
+}
+
+.menu2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Inter';
+    font-size: 14px;
+
+    
+}
+.menu2 :hover {
+    color: #FFFF00;
+}
+
+#cuenta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+#idioma{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+#images-arrow{
+    padding-right: 10px;
+}
+
+
+
+/* Imagen con texto*/
+
+
+/*
+.images-spa {
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.images-spa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+} */
+
+.images-spa{
+
+    display: flex;
+}
+.images-spa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 35%; /* Ajusta para centrar verticalmente */
+    left: 190px; 
+    
+    font-family: 'Romanesco'; 
+    font-size: 96px; 
+    color: #000000; 
+}
+
+.texto-sobre-imagen2 {
+    width: 500px;
+    position: absolute;
+    top: 55%; 
+    left: 190px; 
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+/* Reserva tu cita - Código Promocional*/
+.reserva{
+
+    height: 100px;
+    background: #F2F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 30px;
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.reserva input{
+    border: none;
+    height: 50px;
+    width: 295px;
+    
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-radius: 15px 15px 15px 15px;
+    background: #ffffff;
+    
+}
+
+#reserva-cita{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#codigo-promocional{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* Tarjetas de Masajes*/
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+    background: #ffffff; /*Cambiar a blanco*/
+    padding: 100px 0px;
+    font-family: 'Inter';
+ }
+
+ .card{
+    background: #A3A656;
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 32px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+.card .imagen-reservas{
+    width: 300px;
+    height: 226px;
+}
+
+.card .imagen-reservas img{
+    width: 100%;
+    height: auto;
+
+}
+
+.descripcion{
+    font-size: 16px;
+    text-align: left;
+    padding: 10px 0px;
+    background: #ffffff;
+}
+.precio-boton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+}
+
+.precio{
+    font-size: 32px;
+    font-weight: 600;
+    padding-left: 10px;
+    
+}
+
+.add-button{
+    padding-right: 10px;
+
+}
+.add-button a{
+    background: #A3A656;
+    padding: 10px 30px;
+    border-radius: 35px 35px 35px 35px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    
+}
+.add-button a:hover{
+    background: #384001;
+}
+/*
+.add-button a{
+    background: #A3A656;
+    border-radius: 35px 35px 35px 35px;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    
+}*/
+
+/* Membresias*/
+.container-membresias{
+    height: 770px;
+    background: #F2F6F6;
+    display: flex;
+    flex-direction: column;
+}
+.container-membresias h1{
+    font-size: 32px;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.card-membresias{
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+
+}
+.membresia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+
+}
+.imagen-membresias {
+    width: 233px; /* Ancho y alto del círculo interno */
+    height: 233px;
+    background: #ffffff;
+    border: 11px solid #384001; /* Grosor y color del borde */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.titulo-membresia{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 60px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+
+.add-button-membresia a{
+    background: #A3A656;
+    padding: 20px 70px;
+    border-radius: 35px 35px 35px 35px;
+
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+}
+.add-button-membresia a:hover{
+    background: #384001;
+}
+.beneficios{
+    padding: 40px 0px;
+}
+
+/* Footer */
+.footer {
+    height: 97px;
+    background: #384001;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+}
+.menuFooter1{
+    padding: 0px 0px 0px 70px;
+}
+.menuFooter1 ul {
+    list-style: none;
+    padding: 0px 0px;
+} 
+.menuFooter1 ul li{
+    display: inline-block;
+    padding-right: 40px;
+    
+}
+
+.menuFooter1 ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #A3A656;
+    text-transform: uppercase;
+    
+}
+.menuFooter1 :hover {
+    color: #FFFF00;
+}
+
+
+.menuFooter2 :hover {
+    color: #FFFF00;
+}
+
+#redes{
+    color: #A3A656;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#images-youtube{
+    padding-right: 50px;
+}
