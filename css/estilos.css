@@ -283,7 +283,6 @@ body{
 .membresia{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: 'Inter';
 
@@ -328,6 +327,10 @@ body{
 }
 .beneficios{
     padding: 40px 0px;
+    width: 218px;
+}
+.beneficios ul li{
+    padding: 5px 0px;
 }
 
 /* Footer */
